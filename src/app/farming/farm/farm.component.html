@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-form-field>
+    <input matInput placeholder="Item Name" [(ngModel)]="itemName">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Count" [(ngModel)]="amount">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Price" [(ngModel)]="price">
+  </mat-form-field>
+  <div>
+    <button mat-stroked-button color="warn" (click)="onAddFarm()">Submit</button><button mat-flat-button="warn">Total : {{ sum }}</button>
+  </div>
+</mat-card>
+<mat-card class="sums">Total : {{ sum }}</mat-card>

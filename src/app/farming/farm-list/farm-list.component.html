@@ -1,0 +1,6 @@
+<mat-card>
+  <mat-list *ngFor="let farm of farms">
+    <mat-list-item class="lists">{{ farm.itemName }} | {{ farm.amount }} Pieces * {{ farm.price }} = {{ farm.total }}</mat-list-item>
+  </mat-list>
+</mat-card>
+<p></p>

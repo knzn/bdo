@@ -1,0 +1,7 @@
+<body>
+<app-header></app-header>
+<main>
+  <app-farm (farmTotal)="onFarmAdded($event)"></app-farm>
+  <app-farm-list [farms]="storedFarms"></app-farm-list>
+</main>
+</body>
